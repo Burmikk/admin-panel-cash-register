@@ -1,10 +1,14 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import MainRoute from "./MainRoute";
 
 function App() {
     return (
-        <div className="App">
-            <h1>Let's start create admin panel!</h1>
-        </div>
+        <BrowserRouter>
+            <NavBar />
+            <MainRoute />
+        </BrowserRouter>
     );
 }
 
