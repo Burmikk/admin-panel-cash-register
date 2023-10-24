@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-right: 40px;
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(176, 221, 176);
+    border-radius: 15px;
+}
+.link {
+    &:global(.active) {
+        text-decoration: underline;
+    }
+}
